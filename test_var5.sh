@@ -8,4 +8,4 @@ testEquality()
 }
 
 # load shunit2
-. ../src/shell/shunit2
+../src/shell/shunit2
