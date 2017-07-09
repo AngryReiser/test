@@ -6,7 +6,7 @@ testEquality()
 	sh 5.sh
 	actual=`cat res_5.xml`;
 	expected=`cat result.xml`;
-  assertEquals $actual $expected
+  assertEquals "$actual" "$expected"
 }
 
 # load shunit2
