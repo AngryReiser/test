@@ -5,7 +5,7 @@ testEquality()
 {
 	sh 5.sh
 	actual = `cat res_5.xml`;
-	expected = 'cat result.xml';
+	expected = `cat result.xml`;
 	echo $actual
 	echo $expected
   assertEquals $actual $expected
