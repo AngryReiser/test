@@ -4,8 +4,8 @@
 testEquality()
 {
 	sh 5.sh
-	actual << echo res_5.xml
-	expected <<  echo result.xml
+	echo res_5.xml >> actual
+	echo result.xml >> expected
   assertEquals actual expected
 }
 
