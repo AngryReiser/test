@@ -1,9 +1,9 @@
-#! /bin/sh
+#!/bin/bash
 # file: examples/equality_test.sh
 
 testEquality()
 {
-	5.sh
+	sh 5.sh
   assertEquals res_5.xml result.xml
 }
 
