@@ -3,7 +3,7 @@
 
 testEquality()
 {
-	sh 2.sh
+	sh 8.sh
 	actual=`cat results.json`
 	expected=`cat expected.json`
   assertEquals "$actual" "$expected"
