@@ -4,7 +4,7 @@
 testEquality()
 {
 	sh 9.sh
-	actual=`cat results.jsonl`
+	actual=`cat results.json`
 	expected=`cat expected.json`
   assertEquals "$actual" "$expected"
 }
