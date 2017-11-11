@@ -16,8 +16,8 @@ pDNSF=`awk 'BEGIN{print ('"$DNSF"'/'"$FCount"')*'100'}'`;
 pDNSG=`awk 'BEGIN{print ('"$DNSG"'/'"$FCount"')*'100'}'`;
 
 #Выводим результат
-echo "Весь трафик          - %100 ($FCount)">actual12.txt;
-echo "Трафик 1yf.de.       - %$pDNS1 ($DNS1)">>actual12.txt; 
-echo "Трафик 2yf.de.       - %$pDNS2 ($DNS2)">>actual12.txt;
-echo "Трафик facebook.com. - %$pDNSF ($DNSF)">>actual12.txt;
-echo "Трафик google.com.   - %$pDNSG ($DNSG)">>actual12.txt;
+echo "Full Traffic          - %100 ($FCount)">actual12.txt;
+echo "Traffic 1yf.de.       - %$pDNS1 ($DNS1)">>actual12.txt; 
+echo "Traffic 2yf.de.       - %$pDNS2 ($DNS2)">>actual12.txt;
+echo "Traffic facebook.com. - %$pDNSF ($DNSF)">>actual12.txt;
+echo "Traffic google.com.   - %$pDNSG ($DNSG)">>actual12.txt;
