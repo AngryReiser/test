@@ -1,0 +1,4 @@
+#!/bin/bash
+UL=`grep -E '1yf.de.|2yf.de.' dns-tunneling.log | awk '{print $5}' | sort | uniq`;
+DL=`grep -F "$UL" dns-tunneling.log | awk ' {print $5} ' | sort | uniq -c | awk -F " " '{print $2"	"$1}'`;
+echo "$DL">actual.tsv;
