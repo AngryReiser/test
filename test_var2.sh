@@ -5,7 +5,7 @@ testEquality()
 {
 	sh 2.sh
 	actual=`md5sum results.xml`
-	expected=`a41611c3061dfa3d8afd488d42c8ea1e  results.xml`
+	expected=`1e34870fe9e5165df951662fad8058b3  results.xml`
 
   assertEquals "$actual" "$expected"
 }
