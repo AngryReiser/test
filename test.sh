@@ -4,7 +4,7 @@
 testEquality()
 {
 	sh 4.sh
-	echo md5sum results.txt
+	cat md5sum results.txt
 	actual=`md5sum results.txt`
 	expected="2333e848fa304c0dbadf7521f002938a  results.txt"
   assertEquals "$actual" "$expected"
