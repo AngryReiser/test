@@ -4,8 +4,8 @@
 testEquality()
 {
 	sh 3.sh
-	actual=`cat results.txt`
-	expected=`cat expected.txt`
+	actual=`md5sum results.txt`
+	expected="a644963651fab554cb5605c5b8e110f6  results.txt"
   assertEquals "$actual" "$expected"
 }
 
