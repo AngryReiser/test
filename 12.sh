@@ -16,8 +16,7 @@ pDNSF=`awk 'BEGIN{print ('"$DNSF"'/'"$FCount"')*'100'}'`;
 pDNSG=`awk 'BEGIN{print ('"$DNSG"'/'"$FCount"')*'100'}'`;
 
 #Выводим результат
-echo "%100 ($FCount)">results.txt;
-echo "%$pDNS1 ($DNS1)">>results.txt; 
-echo "%$pDNS2 ($DNS2)">>results.txt;
-echo "%$pDNSF ($DNSF)">>results.txt;
-echo "%$pDNSG ($DNSG)">>results.txt;
+echo "$pDNS1">results.txt; 
+echo "$pDNS2">>results.txt;
+echo "$pDNSF">>results.txt;
+echo "$pDNSG">>results.txt;
